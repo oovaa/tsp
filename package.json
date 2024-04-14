@@ -1,5 +1,6 @@
 {
   "name": "tsp",
+  "main": "index.js",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
@@ -7,5 +8,8 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "langchain": "^0.1.33"
   }
 }
