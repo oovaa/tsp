@@ -1,0 +1,67 @@
+{
+  "name": "fapp",
+  "version": "0.0.0",
+  "author": {},
+  "main": "lib/index",
+  "dependencies": {
+    "@feathersjs/adapter-commons": "^5.0.25",
+    "@feathersjs/authentication": "^5.0.25",
+    "@feathersjs/authentication-client": "^5.0.25",
+    "@feathersjs/configuration": "^5.0.25",
+    "@feathersjs/errors": "^5.0.25",
+    "@feathersjs/express": "^5.0.25",
+    "@feathersjs/feathers": "^5.0.25",
+    "@feathersjs/koa": "^5.0.25",
+    "@feathersjs/schema": "^5.0.25",
+    "@feathersjs/socketio": "^5.0.25",
+    "@feathersjs/transport-commons": "^5.0.25",
+    "@types/koa-router": "^7.4.8",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "koa": "^2.15.3",
+    "koa-router": "^12.0.1",
+    "mongoose": "^8.4.0",
+    "nodemon": "^3.1.1",
+    "winston": "^3.13.0"
+  },
+  "bugs": {},
+  "contributors": [],
+  "description": "a basic FeathersJS application",
+  "directories": {
+    "lib": "src",
+    "test": "test"
+  },
+  "engines": {
+    "node": ">= 20.12.1"
+  },
+  "feathers": {
+    "language": "js",
+    "packager": "npm",
+    "database": "other",
+    "framework": "express",
+    "transports": [
+      "rest",
+      "websockets"
+    ],
+    "schema": "json"
+  },
+  "homepage": "",
+  "keywords": [
+    "feathers"
+  ],
+  "private": true,
+  "scripts": {
+    "start": "node src",
+    "dev": "nodemon mongo.js",
+    "prettier": "npx prettier \"**/*.js\" --write",
+    "mocha": "cross-env NODE_ENV=test mocha test/ --recursive --exit",
+    "test": "npm run mocha",
+    "bundle:client": "npm pack --pack-destination ./public"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/koa": "^2.15.0"
+  }
+}

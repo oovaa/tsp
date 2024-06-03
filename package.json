@@ -10,6 +10,9 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@langchain/community": "^0.0.48",
+    "@langchain/openai": "^0.0.28",
+    "hnswlib-node": "^3.0.0",
     "langchain": "^0.1.33"
   }
 }
